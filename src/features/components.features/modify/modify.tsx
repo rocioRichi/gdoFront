@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { LivingSpaceStructure } from "../../../models/livingspace";
 import { useLivingSpace } from "../../hooks.features/use.livingspace";
 import { LivingSpaceRepo } from "../../repo.features/livingspace.repo/livingspace.repo";
-import "./create.livingspace.css";
+import "./modify.css";
 export function Modify() {
   const repo = new LivingSpaceRepo();
   const { createLivingSpace } = useLivingSpace(repo);

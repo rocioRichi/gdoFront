@@ -100,7 +100,7 @@ export default function Login() {
 
 
 
-       <table border={0}>
+      <table border={0}>
         <tr className="roomtd">
           <td rowSpan={2}>Pintura</td>
           <td> m2:</td>
