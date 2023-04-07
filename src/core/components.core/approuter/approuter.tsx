@@ -4,6 +4,7 @@ import { CreateLivingSpace } from "../../../features/components.features/create.
 // import CreateLivingSpace from "../../../features/components.features/create.livingspace/create.livingspace";
 import { Gallery } from "../../../features/components.features/gallery/gallery";
 import Login from "../../../features/components.features/login/login";
+import { Modify } from "../../../features/components.features/modify/modify";
 import Register from "../../../features/components.features/register.form/register.form";
 import { Room } from "../../../features/components.features/room/room";
 import { Table } from "../../../features/components.features/table/table";
@@ -18,6 +19,7 @@ export function AppRouter() {
       <Route path="/livingspace/room" element={<Room></Room>}></Route>
       <Route path="livingspace/table" element={<Table />}></Route>
       <Route path="livingspace/create" element={<CreateLivingSpace />}></Route>
+      <Route path="livingspace/update" element={<Modify />}></Route>
 
       {/* <Route
         path="livingspace/createlivingspace"

@@ -44,6 +44,15 @@ export function useLivingSpace(repo: LivingSpaceRepo) {
       console.log((error as Error).message);
     }
   };
+  const updateLivingSpace = async (
+    newLivingSpace: Partial<LivingSpaceStructure>
+  ) => {
+    try {
+      await repo.create(newLivingSpace, "/create");
+    } catch (error) {
+      console.error((error as Error).message);
+    }
+  };
 
   return {
     galleryState,
@@ -51,5 +60,6 @@ export function useLivingSpace(repo: LivingSpaceRepo) {
     createLivingSpace,
     room,
     deleteLivingSpace,
+    updateLivingSpace,
   };
 }

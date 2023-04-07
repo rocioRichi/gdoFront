@@ -1,13 +1,10 @@
 import { SyntheticEvent, useEffect, useMemo } from "react";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { LivingSpaceStructure } from "../../../models/livingspace";
 import { RootState } from "../../../store/store";
 import { useLivingSpace } from "../../hooks.features/use.livingspace";
-import {
-  LivingSpaceStateStructure,
-  loadGallery,
-} from "../../reducers.features/livingspace.slice";
+
 import { LivingSpaceRepo } from "../../repo.features/livingspace.repo/livingspace.repo";
 import "./gallery.css";
 

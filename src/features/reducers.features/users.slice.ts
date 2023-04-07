@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { LoginStructure, RegisterStructure } from "../../models/users";
+import { RegisterStructure } from "../../models/users";
 
 export type StateStructure = {
   userLogged: RegisterStructure;

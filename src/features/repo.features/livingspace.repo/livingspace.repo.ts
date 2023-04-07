@@ -1,4 +1,3 @@
-import debug from "debug";
 import { currentUrl } from "../../../config.renderorlocal";
 import { LivingSpaceStructure } from "../../../models/livingspace";
 import { ServerResponse } from "../../../models/users";
